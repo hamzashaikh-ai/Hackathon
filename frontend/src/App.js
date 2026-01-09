@@ -3,8 +3,7 @@ import axios from 'axios';
 import { generatePDFReport } from './utils/pdfExport';
 import './App.css';
 
-const API_BASE = 'http://localhost:4000';
-
+const API_BASE = 'https://hackathon-backend-ojfb.onrender.com';
 function App() {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || 'light';
